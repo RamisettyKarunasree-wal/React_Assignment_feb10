@@ -37,7 +37,7 @@ let Product = (props) => {
                     <p className="pPrice"><b>Product Price : </b>{item.Price}$</p>
                     <p className="pDescription"><b>Product Description : </b>{item.Description}</p>
                     <p className="pRating"><b>Product Rating : </b>{item.Rating}</p>
-                    <p className="pCount"><b>Product Count : </b>{item.Count}</p>
+                    <p className="pCount"><b>Rating Count : </b>{item.Count}</p>
                     <p className="pCategory"><b>Product Category : </b>{item.Category}</p>
                 </div>
             </div> : <div className='searchResult noItem'>Sorry...No Item Found With that product Id</div>}

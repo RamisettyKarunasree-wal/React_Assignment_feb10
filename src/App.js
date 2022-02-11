@@ -2,6 +2,7 @@ import './App.css';
 import Product from './Product';
 import AllProducts from './AllProducts';
 import { useState } from 'react';
+import Categories from './Categories';
 import Menu from './Menu';
 function App() {
   let [Pid, setPid] = useState(1);
@@ -9,6 +10,8 @@ function App() {
   return (
     <div className="App">
       <Menu></Menu>
+      {status ? <Product pid={Number(Pid)}></Product> : ""}
+      <Categories></Categories>
       <form onSubmit={(event) => {
         event.preventDefault();
         setStatus(true);
@@ -20,7 +23,6 @@ function App() {
         </div>
       </form>
       {status ? <button className="closeButton" onClick={() => { setStatus(false) }}>X</button> : ""}
-      {status ? <Product pid={Number(Pid)}></Product> : ""}
       <AllProducts></AllProducts>
     </div>
   );

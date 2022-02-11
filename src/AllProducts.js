@@ -11,6 +11,7 @@ let AllProducts = () => {
 
     return (
         <div>
+            <h1>All Products</h1>
             {
                 data.map((val, index) => {
                     return (
