@@ -1,38 +1,132 @@
 .App {
   text-align: center;
+  background: white;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.item{
+  width: 200px;
+  height: fit-content;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px black;
+  margin: 10px;
+  background-color: rgb(212, 208, 208);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.image{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  border-radius: 5px;
 }
+.price{
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  color: blue;
+  text-shadow: 1px 1px black;
+}
+.title{
+  font-weight: bold;
+  text-align: left;
+}
+.rating{
+  font-size: 14px;
+  font-style: italic;
+  text-align: left;
+}
+.id{
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.menu{
+  background: linear-gradient(45deg,blue,pink);
+  border:2px solid grey;
+  margin: 10px;
+  padding: 10px;
+  text-align: left;
+}
+.menu a{
+  display: inline;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 10px;
+  padding: 5px;
+}
+.menu a:hover{
+  color: rgb(201, 196, 196);
+  box-shadow: 1px 1px grey;
+  font-size: 17px;
+}
+.productItem,.noItem{
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: bisque;
+  border-radius: 10px;
+}
+.productItem{
+  min-height: 350px;
+}
+.pitem{
+  float: left;
+  width: 300px;
+  height: -content;
+}
+.pitem .image{
+  width: 300px;
+  height: 250px;
+}
+.closeButton{
+  position: absolute;
+  right: 5%;
+  top: 15%;
+  border-radius: 15px;
+  background-color: red;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.closeButton:hover{ 
+  background-color: rgb(160, 63, 63);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+option{
+  padding: 3px;
+  margin: 3px;
+}
+.noItem{
+  height: fit-content;
+}
+.searchInput{
+  width: 220px;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 20px;
+}
+.search{
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.searchButton{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+select{
+  padding: 5px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.searchResult{
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(56, 24, 87);
+  border-bottom: 2px solid brown;
+}
+.findItem{
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  margin: auto;
+  display: inline-block;
+  width: 500px;
 }
